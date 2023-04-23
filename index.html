@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cc20770d09.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-png.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li> 
+                    <li><a href="#portfolio">Portfolio</a></li> 
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>             
+                </ul>
+                <i class="fas fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full stack Developer</p>
+                <h1>Hi, i'm <span>Frankiee</span><br> Ogba from Canada </h1>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ---------------------about-container---------------------- -->
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/frankpic2.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Aliquam doloremque est recusandae rem, 
+                    sit repudiandae sint earum obcaecati, 
+                    voluptatum, cupiditate tempora quae consequuntur? 
+                    Cumque assumenda facere enim atque. Alias, quisquam!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full stack developer</span><br> Building both fontend and backend website</li>
+                            <li><span>Network engineer</span><br> switching, routing network topology</li>
+                            <li><span>computer instructor</span><br> training in computer appreciation</li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 -current</span><br> Full stack Training Gomycode institute</li>
+                            <li><span>2021</span><br> Network Engineer Team lead at Rexifi Technology</li>
+                            <li><span>2019</span><br> NetworkEngineering field support at Tizeti Network</li>
+
+                           
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>certificate of attendance Gomycode</li>
+                            <li><span>2021</span><br> Cambium workshop and certification</li>
+                            <li><span>2017</span><br> B.sc computer science</li>
+                        </ul>
+
+                    </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ------------------services---------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>website design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Learn more </a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-wifi"></i>
+                    <h2>Network engineer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Learn more </a>
+                </div>
+
+                <div>
+                    <i class="fa-thin fa-computer"></i>
+                    <h2>computer instructor</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Learn more </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ------------------portfolio-------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/robot.jpg">
+                    <div class="layer">
+                        <h3>Robotic App</h3>
+                        <p>The connect help you to accomplish task fast and easy using Artificial Intelligent bot.
+                           <br> Downlaod it from play store
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+
+                    </div>
+                </div>
+
+               
+                     <div class="work">
+                        <img src="images/workstation.jpg">
+                        <div class="layer">
+                            <h3>Javascripts<i class="fa-brands fa-square-js"></i></h3>
+                            <p>The connect help you to accomplish task fast and easy using Artificial Intelligent bot.
+                               <br> Downlaod it from play store
+                            </p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+
+                         <div  class="work">
+                            <img src="images/Nworkstation.jpg">
+                            <div class="layer">
+                                <h3>Networking App</h3>
+                                <p>The connect help you to accomplish task fast and easy using Artificial Intelligent bot.
+                                   <br> Downlaod it from play store
+                                </p>
+                                <a href="#"><i class="fa-solid fa-link"></i></a>
+        
+                            </div>
+        
+                        </div> 
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------------contact ----------------- -->
+    <div id="contact">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>contact@gmail.com</p>
+                <p><i class="fas fa-square-phone"></i>+2318666560</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                    <a href="images/FRANK RESUME (1).docx"  download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder=" Your Name" required>
+                    <input type="Email" name="email" placeholder=" Your email" required>
+                    <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                    <div>
+                        <button type="submit" class="btn btn2">submit</button>
+
+                    </div>
+    
+                </form>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Frankiee Ocean signnature</p>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+                for(tablink of tablinks) {
+                    tablink.classList.remove('active-link');
+                }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab');
+            }
+                event.currentTarget.classList.add('active-link');
+                document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById('sidemenu');
+
+        function openmenu() {
+            sidemenu.style.right = '0';
+        }
+        function closemenu() {
+            sidemenu.style.right = '-200px';
+        }
+    </script>
+</body>
+</html>
