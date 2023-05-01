@@ -306,6 +306,8 @@ color:#ff004f
 .btn.btn2 {
     display: inline-block;
     background: #ff004f;
+    margin-top: auto;
+    margin-bottom: 100px;
 }
 .contact-right form {
     width: 100%
@@ -324,7 +326,7 @@ form input, form textarea {
 .copyright {
     width: 100%;
     text-align: center;
-    padding: 25px 0;
+    padding: 15px 0;
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
@@ -395,4 +397,12 @@ nav .fas {
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+    .copyright{
+        font-size: 10px;
+    }
+}
+#msg {
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
